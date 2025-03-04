@@ -1,0 +1,72 @@
+Homework
+
+    Exercises are done in groups of 5 to 6 people. Use the discussion forum to form groups.
+    Exercises are graded starting from exercise sheet 3.
+    Exercises are typically composed of a theoretical part and programming part.
+
+Group Registration
+
+    Send a message to Julio Uriostegui with the name/surname of the members of the group (cc'ed to other group members) until October 27 at 4pm.
+    No need to propose a group name. It will be generated automatically from your initials.
+    It might take up to 2 working days before your group is registered.
+    A group will be created only if it is composed of at least 5 participants.
+    At least three group members must have current ISIS access at registration time.
+
+Homework Submission Procedure
+
+    Submission deadline: Monday, 2pm Berlin time.
+    Uploading via ISIS.
+    Submission format: For the theory part, scans or typewritten solutions are accepted (in PDF format). For the programming part, the IPython notebooks should be exported to PDF.
+    Submissions are only possible if you have registered your group.
+    No late submissions, and no email submission (they won't be graded)
+    Hint: To avoid missing the deadline, you can upload an early solution on ISIS and regularly update it as the deadline approaches.
+
+Getting started with the Programming Homeworks
+
+The course assumes that you use a recent linux distribution with Python 3.0 installed, or other operating system supporting Python. (Windows users could install setuptools as an alternative.)
+
+Installing required Python tools libraries
+
+If not installed, run
+
+sudo apt-get install jupyter-notebook
+sudo apt-get install python3-numpy
+sudo apt-get install python3-scipy
+sudo apt-get install python3-matplotlib
+sudo apt-get install python3-cvxopt
+
+or equivalent command depending on your distribution.
+
+Installing GPG
+
+As an extra security layer, the distributed code is signed with GPG. If not installed, run
+
+sudo apt-get install gnupg
+
+or equivalent command depending on your distribution.
+
+Using our public GPG key
+
+    Download our GPG public key from ISIS.
+    Import it and verify that the fingerprint is:  9AA7 2C0B A06F 34D5 803C 68D1 AA15 341D 98C7 12B6
+
+gpg --import public.key
+gpg --fingerprint
+
+Opening a homework
+
+    Download the programming assignment from ISIS
+    Run the following commands:
+
+gpg --output sheet1.zip --decrypt sheet1.zip.gpg
+unzip sheet1.zip
+
+    Start the notebook
+
+jupyter notebook
+
+
+
+
+
+
